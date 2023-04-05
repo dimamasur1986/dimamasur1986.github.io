@@ -1,0 +1,1196 @@
+@import url(./fonts.css);
+@import "base/base";
+@import "./base/mixins";
+
+
+
+
+header {
+    max-width: 1440px;
+    height: 700px;
+    margin: 0 auto;
+
+    .block-img {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/HeadaerandPromo.png);
+
+        .block {
+            max-width: 950px;
+            height: 75px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &__logo {
+                margin: 0 0 5px 4px;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                color: #FFFFFF;
+
+            }
+
+            .box {
+                width: 180px;
+                height: 37px;
+                margin: 0 42px 0 0;
+
+                &__login {
+                    width: 46%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                    padding: 4px 0 0 7px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: 'Montserrat';
+                    color: #FFFFFF;
+                }
+
+                &__signup {
+                    width: 51%;
+                    height: 99%;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 17px;
+                    background: none;
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: 'Montserrat';
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .name {
+        max-width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__share {
+            font-size: 52px;
+            font-weight: 700;
+            font-family: 'Montserrat';
+            color: #FFFFFF;
+            margin: 0 0 30px;
+            line-height: 63px;
+            text-align: center;
+        }
+
+        &__find {
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Roboto-Light';
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 34px;
+        }
+
+        &__holiday {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            color: #FFFFFF;
+            width: 225px;
+            height: 42px;
+            border: none;
+            background-color: #FF4E50;
+            border-radius: 20px;
+        }
+    }
+}
+
+main {
+    max-width: 940px;
+    height: 2490px;
+    margin: 0 auto;
+    padding-top: 88px;
+
+    .how {
+        font-size: 26px;
+        font-weight: 700;
+        font-family: 'Montserrat';
+        color: #444444;
+        text-align: center;
+    }
+
+    .step {
+        max-width: 100%;
+        height: 400px;
+        margin-top: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .step-1,
+        .step-2,
+        .step-3 {
+            max-width: 32%;
+            height: 100%;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 28px 20px 25px;
+
+            &__button {
+                width: 70px;
+                height: 20px;
+                border-radius: 10px;
+                border: none;
+                background-color: #FF4E50;
+                font-family: 'Montserrat';
+                font-size: 10px;
+                color: #FFFFFF;
+                line-height: 12px;
+                letter-spacing: 2px;
+                padding-top: 4px;
+            }
+
+            &__name {
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Montserrat';
+                line-height: 26px;
+                color: #FFFFFF;
+                margin-top: 24px;
+            }
+
+            &__text {
+                font-size: 14px;
+                font-weight: 200;
+                font-family: 'Roboto-Light';
+                line-height: 14px;
+                color: #E3E3E3;
+                margin-top: 24px;
+            }
+        }
+
+        .step-1 {
+            background-image: url(./img/Step-1.png);
+        }
+
+        .step-2 {
+            background-image: url(./img/Step-2.png);
+
+            &__text {
+                margin-top: 18px;
+            }
+        }
+
+        .step-3 {
+            background-image: url(./img/Step-3.png);
+        }
+    }
+
+    .partner {
+        max-width: 941px;
+        height: 366px;
+        margin: 0 auto;
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__meet {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            color: #444444;
+            line-height: 32px;
+            padding-bottom: 8px;
+        }
+
+        .person {
+            width: 100%;
+            height: 265px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .person-1,
+            .person-2,
+            .person-3,
+            .person-4 {
+                max-width: 23.7%;
+                height: 240px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 25px;
+
+                &__avatar {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    position: relative;
+                }
+
+                &__name {
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: 'Montserrat';
+                    line-height: 17px;
+                    color: #444444;
+                    margin-top: 20px;
+                }
+
+                &__info {
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-family: 'Roboto-Light';
+                    line-height: 14px;
+                    color: #666666;
+                    text-align: center;
+                    margin-top: 22px;
+                }
+            }
+
+            .person-1 {
+
+                &__avatar {
+                    background-image: url(./img/Photo-1.png);
+                }
+
+                &__avatar::before {
+                    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 24 24' id='music'><path d='M20,2.74a1,1,0,0,0-.93-.1l-10,4a1,1,0,0,0-.63.92V16A4.19,4.19,0,0,0,7,15.78c-1.93,0-3.44,1.24-3.44,2.83S5.07,21.44,7,21.44a3.61,3.61,0,0,0,3-1.39,1,1,0,0,0,.48-.83V12.08l8-3.07v5A4.19,4.19,0,0,0,17,13.78c-1.93,0-3.44,1.24-3.44,2.83s1.51,2.83,3.44,2.83a3.61,3.61,0,0,0,3-1.39,1,1,0,0,0,.48-.83V3.56A1,1,0,0,0,20,2.74Z' data-name='30. Double, music, notation, note'></path></svg>");
+                     @include box (flex, 5px solid white, 32px, 32px, 50%, absolute, 85px, -5px);
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background-color: #FF4E50;
+                }
+            }
+
+            .person-2 {
+
+                &__avatar {
+                    background-image: url(./img/Photo-2.png);
+                }
+
+                &__avatar::before {
+                    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' viewBox='0 0 20 20' id='brush'><path d='M2.763 13.563c-1.515 1.488-.235 3.016-2.247 5.279-.908 1.023 3.738.711 6.039-1.551.977-.961.701-2.359-.346-3.389-1.047-1.028-2.47-1.3-3.446-.339zM19.539.659C18.763-.105 10.16 6.788 7.6 9.305c-1.271 1.25-1.695 1.92-2.084 2.42-.17.219.055.285.154.336.504.258.856.496 1.311.943.456.447.699.793.959 1.289.053.098.121.318.342.152.51-.383 1.191-.801 2.462-2.049C13.305 9.88 20.317 1.422 19.539.659z'></path></svg>");
+                   
+                     @include box (flex, 5px solid white, 32px, 32px, 50%, absolute, 85px, -5px);
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #19D4CA;
+                }
+            }
+
+            .person-3 {
+
+                &__avatar {
+                    margin-left: 4px;
+                    background-image: url(./img/Photo-3.png);
+                }
+
+                &__avatar::before {
+                    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' viewBox='0 0 20 20' id='camera'><path d='M10 8a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm8-3h-2.4a.888.888 0 0 1-.789-.57l-.621-1.861A.89.89 0 0 0 13.4 2H6.6c-.33 0-.686.256-.789.568L5.189 4.43A.889.889 0 0 1 4.4 5H2C.9 5 0 5.9 0 7v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-8 11a5 5 0 0 1-5-5 5 5 0 1 1 10 0 5 5 0 0 1-5 5zm7.5-7.8a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4z'></path></svg>");
+                   
+                    @include box (flex, 5px solid white, 32px, 32px, 50%, absolute, 85px, -5px);
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFA710;
+                }
+
+                &__info {
+                    margin-top: 24px;
+                }
+            }
+
+            .person-4 {
+
+                &__avatar {
+                    background-image: url(./img/Photo-4.png);
+                    margin-left: 4px;
+                }
+
+                &__avatar::before {
+                    @include box (flex, 5px solid white, 32px, 32px, 50%, absolute, 85px, -5px);
+                    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 512 512' id='plane'><path d='M448 336v-40L288 192V79.2c0-17.683-14.82-31.2-32-31.2-17.179 0-32 13.518-32 31.2V192L64 296v40l160-48v113.602l-48 31.199V464l80-16 80 16v-31.199l-48-31.199V288l160 48z'></path></svg>");
+                    
+                   
+                    
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #667DF3;
+                    transform: rotate(60deg);
+                }
+
+                &__info {
+                    margin-top: 27px;
+                    padding-left: 4px;
+                }
+            }
+        }
+
+        &__see {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            color: #FF4E50;
+            width: 180px;
+            height: 40px;
+            background-color: #FFFFFF;
+            border: 2px solid #FF4E50;
+            border-radius: 20px;
+            margin: 21px auto 0;
+            padding-top: 2px;
+            padding-left: 4px;
+        }
+    }
+
+    .ideas-block {
+
+        max-width: 940px;
+        height: 1125px;
+        padding-top: 88px;
+
+        &__ideas {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            color: #444444;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        &__block-foto {
+            width: 100%;
+            height: 968px;
+            margin-top: 37px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__box-foto-1 {
+            @include box-foto (32%, 310px, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-1.png);
+        }
+
+        &__box-foto-2 {
+            @include box-foto (32%, 310px, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-2.png);
+        }
+
+        &__box-foto-3 {
+            @include box-foto (32%, 310px, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-3.png);
+        }
+
+        &__box-foto-4 {
+            @include box-foto (32%, 310px, 19px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-4.png);
+        }
+
+        &__box-foto-5 {
+            @include box-foto (66%, 310px, 19px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-5.png);
+        }
+
+        &__box-foto-6 {
+            @include box-foto (66%, 310px, 19px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-6.png);
+        }
+
+        &__box-foto-7 {
+            @include box-foto (32%, 310px, 19px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-7.png);
+        }
+
+        &__p {
+            font-size: 22px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            line-height: 27px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .interests {
+        width: 488px;
+        height: 354px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 8px;
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Montserrat';
+            color: #444444;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            font-family: 'Roboto-Light';
+            color: #666666;
+            line-height: 14px;
+            text-align: center;
+            margin: 54px 0 24px;
+        }
+
+        form {
+            input[type="text"] {
+                width: 300px;
+                height: 40px;
+                border-radius: 2px;
+                border: 1px solid #D4D4D4;
+                background-color: #FFFFFF;
+                padding: 5px 0 0 16px;
+                margin-left: 3px;
+            }
+
+
+            input[type="button"] {
+                width: 172px;
+                height: 40px;
+                border-radius: 40px;
+                border: none;
+                background-color: #FF4E50;
+                color: #FFFFFF;
+                font-size: 14;
+                line-height: 17px;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                margin: 0 0 0px 5px;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+footer {
+    max-width: 1440px;
+    height: 260px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+
+    .red {
+        max-width: 1440px;
+        height: 3px;
+        background-color: #FF4E50;
+        grid-row: 1/2;
+        grid-column: 1/7;
+    }
+
+    .dreamshare {
+        @include box-font ('Montserrat', 16px, 400, 20px, #FF4E50);
+        grid-row: 2/3;
+        grid-column: 2/3;
+        padding: 8px 0 0 10px;
+    }
+
+    .company {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        padding: 12px 0 0 10px;
+
+        h3 {
+            @include box-font ('Montserrat', 14px, 700, 17px, #444444);
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include box-font ('Roboto-Light', 14px, 300, 26px, #999999);
+        }
+    }
+
+    .partners {
+        @include box-font ('Montserrat', 14px, 700, 17px, #444444);
+        grid-row: 2/3;
+        grid-column: 4/5;
+        padding: 12px 0 0 10px;
+    }
+
+    .areto {
+        grid-row: 2/3;
+        grid-column: 5/6;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px 6px 0 0;
+
+        p {
+            @include box-font ('Montserrat', 10px, 700, 12px, #CCCCCC);
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .icon {
+            width: 110px;
+            height: 24px;
+            background-image: url();
+            background-image: url(./img/Bitmap.png);
+            margin-right: 4px;
+        }
+    }
+}
+
+/*-----768px-------*/
+
+@media screen and (max-width: 768px) {
+    header {
+        max-width: 768px;
+        height: 700px;
+
+        .block-img {
+            width: 100%;
+            height: 100%;
+            background-image: url(./img/Headaer-and-Promo.png);
+
+            .block {
+                &__logo {
+                    margin: 0 0 6px 47px;
+                }
+
+                .box {
+                    margin: 0 48px 1px 0;
+
+                    &__login {
+                        width: 47%;
+                        padding-left: 10px;
+                    }
+
+                    &__signup {
+                        width: 50%;
+                        border: 2px solid white;
+                    }
+                }
+            }
+
+            .name {
+                height: 548px;
+                margin-bottom: 2px;
+
+                &__share {
+                    margin-bottom: 28px;
+                }
+
+                &__find {
+                    margin-bottom: 34px;
+                }
+
+                &__holiday {
+                    height: 40px;
+                    padding-top: 2px;
+                }
+            }
+        }
+    }
+
+    main {
+        height: 2735px;
+        padding-top: 95px;
+
+        .how {
+            font-size: 22px;
+        }
+
+        .step {
+            max-width: 748px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 34px;
+
+            .step-1,
+            .step-2,
+            .step-3 {
+                max-width: 31.5%;
+                height: 100%;
+                padding: 0 15px 15px 20px;
+                overflow: hidden;
+
+                &__name {
+                    line-height: 14px;
+                    margin-top: 45px;
+
+                }
+
+                &__text {
+                    margin-top: 30px;
+                }
+            }
+
+            .step-1 {
+                background-image: url(./img/Step-1m.png);
+            }
+
+            .step-2 {
+                background-image: url(./img/Step-2m.png);
+
+                &__name {
+                    line-height: 14px;
+                    margin-top: 15px;
+                    word-spacing: 1px;
+                }
+
+                &__text {
+                    margin-top: 24px;
+                }
+            }
+
+            .step-3 {
+                background-image: url(./img/Step-3m.png);
+            }
+        }
+
+        .partner {
+            max-width: 492px;
+            height: 610px;
+
+            &__meet {
+                font-size: 22px;
+                margin-top: 2px;
+            }
+
+            .person {
+                width: 100%;
+                height: 500px;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: space-between;
+                margin-top: 23px;
+
+                .person-1,
+                .person-2,
+                .person-3,
+                .person-4 {
+                    margin-top: 0;
+                    max-width: 236px;
+                    height: 240px;
+                }
+
+                .person-2 {
+                    &__name {
+                        margin-top: 19px;
+                    }
+
+                    &__info {
+                        margin-top: 22px;
+                    }
+                }
+
+                .person-3 {
+                    &__info {
+                        margin-top: 27px;
+                    }
+                }
+
+                .person-4 {
+                    &__name {
+                        margin-top: 19px;
+                    }
+
+                    &__info {
+                        margin-top: 22px;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            &__see {
+                margin-top: 5px;
+            }
+        }
+
+        .ideas-block {
+            max-width: 748px;
+            margin: 0 auto;
+            padding-top: 90px;
+
+            &__ideas {
+                font-size: 22px;
+            }
+
+            &__block-foto {
+                margin-top: 35px;
+            }
+
+            &__box-foto-1 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-1m.png);
+                width: 31.5%;
+            }
+
+            &__box-foto-2 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-2m.png);
+                width: 31.5%;
+            }
+
+            &__box-foto-3 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-3m.png);
+                width: 31.5%;
+            }
+
+            &__box-foto-4 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-4m.png);
+                width: 31.5%;
+            }
+
+            &__box-foto-5 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-5m.png);
+                width: 66%;
+            }
+
+            &__box-foto-6 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-6m.png);
+                width: 66%;
+            }
+
+            &__box-foto-7 {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-7m.png);
+                width: 31.5%;
+            }
+        }
+
+        .interests {
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                margin: 50px 0 24px;
+            }
+        }
+    }
+
+    footer {
+        max-width: 768px;
+        height: 224px;
+        display: grid;
+        grid-template-columns: 256px 1fr 1fr 1fr;
+        grid-template-rows: 30px 1fr;
+
+        .red {
+            grid-row: 1/2;
+            grid-column: 1/5;
+        }
+
+        .dreamshare {
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding-left: 40px;
+        }
+
+        .company {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+
+        .partners {
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+
+        .areto {
+            grid-row: 2/3;
+            grid-column: 4/5;
+            padding-right: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        max-width: 320px;
+        height: 540px;
+        margin-left: 10px;
+        margin: 0 auto;
+
+        .block-img {
+            width: 97%;
+            margin-left: 9px;
+            background-image: url(./img/Background.png);
+
+            .block {
+                flex-direction: column;
+                height: 175px;
+
+                &__logo {
+                    order: 2;
+                    margin: 20px auto 0;
+                    padding-left: 12px;
+                }
+
+                .box {
+                    width: 69%;
+                    margin: 18px auto;
+                    padding-right: 30px;
+                    padding-bottom: 4px;
+
+                    &__login {
+                        text-align: end;
+                        padding-right: 15px;
+                    }
+
+                    &__signup {
+                        width: 90px;
+                        height: 36px;
+                    }
+
+                }
+            }
+
+            /*----*/
+
+            .name {
+                height: 365px;
+                justify-content: flex-start;
+
+                &__share {
+                    font: {
+                        size: 30px;
+                        weight: 700;
+                        family: 'Montserrat';
+                    }
+
+                    margin: 30px 0 0;
+                    line-height: 36px;
+                    padding-left: 10px;
+                }
+
+                &__find {
+                    font: {
+                        size: 18px;
+                        weight: 300;
+                        family: 'Roboto-Light';
+                    }
+
+                    line-height: 24px;
+                    padding: 0 28px;
+                    text-align: center;
+                    margin: 6px 0 0;
+                }
+
+                &__holiday {
+                    font: {
+                        size: 14px;
+                        weight: bold;
+                        family: 'Montserrat';
+                    }
+
+                    width: 91%;
+                    height: 41px;
+                    margin: 15px 0 0 10px;
+                    padding: 0;
+                    background-color: #FF4E50;
+                }
+            }
+        }
+    }
+
+    main {
+        max-width: 320px;
+        height: 3172px;
+        padding-top: 34px;
+
+        .step {
+            max-width: 300px;
+            height: 740px;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 15px;
+
+            .step-1 {
+                background-image: url(./img/Step-1T.png);
+                max-width: 100%;
+                height: 240px;
+                padding: 0 35px 14px 19px;
+
+                &__button {
+                    padding-bottom: 3px;
+                }
+
+                &__text {
+                    margin-top: 25px;
+                }
+            }
+
+            .step-2 {
+                background-image: url(./img/Step-2T.png);
+                max-width: 100%;
+                height: 240px;
+                padding: 0 35px 14px 19px;
+
+                &__name {
+                    margin-top: 30px;
+                }
+            }
+
+            .step-3 {
+                background-image: url(./img/Step-3T.png);
+                max-width: 100%;
+                height: 240px;
+                padding: 0 35px 14px 19px;
+
+                &__button {
+                    padding-bottom: 3px;
+                }
+
+                &__text {
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        .partner {
+            max-width: 300px;
+            height: 1035px;
+            margin-top: 34px;
+
+            &__meet {
+                text-align: center;
+                line-height: 27px;
+            }
+
+            .person {
+                width: 100%;
+                height: 904px;
+                align-content: center;
+                justify-content: space-between;
+                margin-top: 5px;
+
+                .person-1 {
+                    height: 220px;
+                    order: 1;
+                }
+
+                .person-2 {
+                    height: 220px;
+                    order: 3;
+                    margin-top: 9px;
+
+                    &__avatar::before {
+                        top: 84px;
+                    }
+                }
+
+                .person-3 {
+                    height: 230px;
+                    order: 2;
+                    margin-top: 3px;
+
+                    &__avatar {
+                        margin-left: 0;
+                    }
+
+                    &__avatar::before {
+                        top: 82px;
+                    }
+
+                    &__name {
+                        margin-top: 18px;
+                    }
+                }
+
+                .person-4 {
+                    height: 220px;
+                    order: 4;
+                    margin-top: 2px;
+
+                    &__avatar {
+                        margin-left: 0;
+                    }
+
+                    &__avatar::before {
+                        top: 82px;
+                    }
+                }
+            }
+
+            &__see {
+                width: 93.3%;
+                margin-top: 20px;
+            }
+        }
+
+        .ideas-block {
+            width: 93.75%;
+            height: 1010px;
+            padding-top: 34px;
+
+            &__ideas {
+                line-height: 27px;
+                padding: 0 40px 0 40px;
+            }
+
+            &__block-foto {
+                width: 100%;
+                height: 900px;
+                flex-direction: column;
+                margin-top: 33px;
+            }
+
+            &__box-foto-1 {
+                @include box-foto (100%, 120px, 0px);
+                padding-bottom: 28px;
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-1T.png);
+
+                p {
+                    padding: 0 50px 0 50px;
+                }
+            }
+
+            &__box-foto-2 {
+                @include box-foto (100%, 120px, 0px);
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-2T.png);
+
+                p {
+                    padding: 0 50px 0 50px;
+                }
+            }
+
+            &__box-foto-3 {
+                @include box-foto (100%, 120px, 0px);
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-3T.png);
+            }
+
+            &__box-foto-4 {
+                @include box-foto (100%, 120px, 0px);
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-4T.png);
+            }
+
+            &__box-foto-5 {
+                @include box-foto (100%, 120px, 0px);
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-5T.png);
+            }
+
+            &__box-foto-6 {
+                @include box-foto (100%, 120px, 0px);
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-6T.png);
+            }
+
+            &__box-foto-7 {
+                @include box-foto (100%, 120px, 0px);
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Object-7T.png);
+            }
+        }
+
+        .interests {
+            width: 93.75%;
+            height: 210px;
+            justify-content: start;
+            padding: 0;
+            margin-top: 45px;
+
+            h2 {
+                line-height: 27px;
+            }
+
+            p {
+                margin: 19px 0 15px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 5px;
+
+                input[type="text"] {
+                    width: 93.3%;
+                    padding-left: 12px;
+                }
+
+
+                input[type="button"] {
+                    width: 93.3%;
+                    margin-top: 10px;
+                    padding: 0 0 0 8px;
+                    letter-spacing: 0.4px;
+                }
+            }
+        }
+    }
+
+    footer {
+        max-width: 320px;
+        height: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .red {
+            width: 100%;
+            height: 3px;
+        }
+
+        .dreamshare {
+            padding: 0;
+            margin-top: 18px;
+        }
+
+        .company {
+            max-width: 200px;
+            height: 65px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 0;
+            margin-top: 14px;
+
+            h3 {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+        }
+
+        .partners {
+            padding: 0;
+            margin-top: 11px;
+        }
+
+        .areto {
+            padding: 0;
+            margin-top: 12px;
+            align-items: center;
+
+            .icon {
+                margin: 0;
+            }
+        }
+    }
+}

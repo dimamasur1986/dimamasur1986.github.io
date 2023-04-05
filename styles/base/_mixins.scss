@@ -1,0 +1,28 @@
+@mixin box ($d, $b, $w, $h, $br, $p, $t, $r) {
+
+    display: $d;
+    border: $b;
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    position: $p;
+    top: $t;
+    right: $r;
+}
+
+@mixin box-foto ($w, $h, $mt) {
+    width: $w;
+    height: $h;
+    margin-top: $mt;
+
+}
+
+@mixin box-font ($f, $fs, $fw, $h, $c) {
+    font-family: $f;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $h;
+    color: $c;
+
+}
+
